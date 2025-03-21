@@ -1,0 +1,77 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Actor List Styles */
+  .actor-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .actor-card {
+    width: 200px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .actor-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .favorite-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    padding: 10px;
+  }
+  
+  .favorite-button:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Favorite Actors Page Styles */
+  .favorite-actors {
+    padding: 20px;
+  }
+  
+  .actors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .actor-card h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .actor-card img {
+    border-radius: 8px;
+    transition: transform 0.3s;
+  }
+  
+  .actor-card img:hover {
+    transform: scale(1.05);
+  }
+  
